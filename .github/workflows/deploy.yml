@@ -23,6 +23,7 @@ jobs:
             cd /tmp
             git pull origin main  # Pull the latest changes (optional)
             # Copy your deployment files or scripts
+            ls -la /tmp
             cp -r /tmp/*.txt /var/www/html/
             # Restart application, services, or Docker containers as needed
             sudo systemctl restart httpd  # Example, if you're using Apache web server
