@@ -25,4 +25,4 @@ jobs:
             # Copy your deployment files or scripts
             cp -r /tmp/*.txt /var/www/html/
             # Restart application, services, or Docker containers as needed
-            sudo systemctl restart apache2  # Example, if you're using Apache web server
+            sudo systemctl restart httpd  # Example, if you're using Apache web server
