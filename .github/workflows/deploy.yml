@@ -20,9 +20,9 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~/my-app
+            cd /tmp
             git pull origin main  # Pull the latest changes (optional)
             # Copy your deployment files or scripts
-            cp -r ./my-app /var/www/html/
+            cp -r /tmp/*.txt /var/www/html/
             # Restart application, services, or Docker containers as needed
             sudo systemctl restart apache2  # Example, if you're using Apache web server
